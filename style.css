@@ -1,0 +1,294 @@
+/* Basic page reset for consistent spacing */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  /* Subtle Intel-inspired light background for the page (excluding header) */
+  background-color: #f6f9fc;
+  /* Soft wave-like layers for a gentle, pale background */
+  background-image:
+    radial-gradient(120% 60% at 50% 0%, rgba(0, 113, 197, 0.08) 0%, transparent 60%),
+    radial-gradient(120% 60% at 50% 100%, rgba(0, 113, 197, 0.06) 0%, transparent 60%),
+    linear-gradient(180deg, #ffffff 0%, #eef5fb 100%);
+}
+
+/* Header with a soft navy-to-eco-green gradient */
+header {
+  background: linear-gradient(135deg, #0071c5, #2fa86b);
+  color: #ffffff;
+  text-align: center;
+  padding: 130px 25px;
+  transition: background 1s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Make the logo smaller and centered */
+.header-logo {
+  width: 270px;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto 20px;
+  transform: translateY(0) scale(1);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Soft lift and blue glow on hover */
+.header-logo:hover {
+  transform: translateY(-10px) scale(1.06);
+  filter: drop-shadow(0 8px 12px rgba(42, 86, 160, 0.5));
+}
+
+/* Limit the text width so it reads nicely */
+header div {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Decorative header icons */
+.header-icon {
+  position: absolute;
+  width: 90px;
+  max-width: 25vw;
+  opacity: 0.85;
+  padding: 6px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0);
+  transition: transform 0.4s ease, background-color 0.4s ease;
+  display: block;
+  z-index: 1;
+}
+
+/* Smooth hover grow with a soft background glow */
+.header-icon:hover {
+  transform: scale(1.12);
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.header-icon-chip {
+  top: 20px;
+  left: 20px;
+}
+
+.header-icon-plant {
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Larger header text for the title and description */
+header h1 {
+  font-size: 2.4rem;
+  font-family: "Bricolage Grotesque", Arial, sans-serif;
+  margin: 12px 0 12px;
+  transform: translateY(50px);
+}
+
+header p {
+  font-size: 1.2rem;
+  font-family: "Bricolage Grotesque", Arial, sans-serif;
+  margin: 0;
+  transform: translateY(50px);
+}
+
+
+
+/* Timeline section with a pale white background */
+.timeline {
+  background-color: transparent;
+  border: none;
+  padding: 40px 20px;
+  /* Flexbox places the cards in a row on large screens */
+  display: flex;
+  flex-direction: row;
+  /* Show 4 cards at a time and scroll for the rest */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  /* Smooth horizontal scroll */
+  scroll-behavior: smooth;
+  /* Snap each card into place while scrolling */
+  scroll-snap-type: x mandatory;
+  scroll-padding: 20px;
+  /* Smoother touch scrolling on mobile */
+  -webkit-overflow-scrolling: touch;
+  gap: 20px;
+  justify-content: flex-start;
+  /* Center the container on the page */
+  box-sizing: border-box;
+  /* 4 cards plus 20px padding on both sides: 880px + 40px = 920px */
+  width: 858px;
+  max-width: 100%;
+  margin: 150px auto 150px;
+}
+
+/* Rectangular cards for each timeline item */
+.timeline div {
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 0 0 220px;
+  min-width: 220px;
+  /* Make the card shorter and stack text top/bottom */
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  /* Snap each card to the start edge */
+  scroll-snap-align: start;
+  /* Encourage the scroll to stop on each card */
+  scroll-snap-stop: always;
+  transition: border-color 0.25s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Add a background image to the first card */
+.timeline div:first-child {
+  background-image: url("img/1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add a background image to the second card */
+.timeline div:nth-child(2) {
+  background-image: url("img/intel 1st micro.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add a background image to the third card */
+.timeline div:nth-child(3) {
+  background-image: url("img/3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add a background image to the fourth card */
+.timeline div:nth-child(4) {
+  background-image: url("img/4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add a background image to the fifth card */
+.timeline div:nth-child(5) {
+  background-image: url("img/ghg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add a background image to the sixth card */
+.timeline div:nth-child(6) {
+  background-image: url("img/intel rise.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add a background image to the seventh card */
+.timeline div:nth-child(7) {
+  background-image: url("img/netO.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add a background image to the eighth card */
+.timeline div:nth-child(8) {
+  background-image: url("img/nat.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add a background image to the ninth card */
+.timeline div:nth-child(9) {
+  background-image: url("img/sem.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Keep headings tight inside the smaller card */
+.timeline div h2,
+.timeline div h3 {
+  margin: 0;
+  font-family: "Josefin Sans", Arial, sans-serif;
+  /* Fade the headings smoothly when the card is hovered */
+  transition: opacity 0.3s ease;
+  /* Semi-transparent black label behind the heading text */
+  background-color: rgba(0, 0, 0, 0.45);
+  color: #ffffff;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Keep the first card headings readable on the photo */
+.timeline div:first-child h2,
+.timeline div:first-child h3 {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.timeline div:hover {
+  border-color: #000000;
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.16);
+}
+
+/* Hide headings when the overlay is visible */
+.timeline div:hover h2, .timeline div:hover h3 {
+  opacity: 0;
+}
+
+/* Hide the paragraph until hover */
+.timeline div p {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #ffffff;
+  /* Use Ubuntu for card text and make it a bit larger */
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-size: 1.05rem;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+/* Show the paragraph overlay on hover */
+.timeline div:hover p {
+  opacity: 1;
+}
+
+/* Center the timeline helper text */
+.timeline-note {
+  background-color: #0071c5;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 5px 20px;
+}
+
+/* Stack the timeline vertically on small screens */
+@media (max-width: 720px) {
+  .timeline {
+    /* Switch to a single column */
+    flex-direction: column;
+    /* Let the cards grow to fit the screen */
+    flex-wrap: nowrap;
+    overflow-x: visible;
+    max-width: 100%;
+  }
+
+  .timeline div {
+    /* Let each card fill the width of the column */
+    flex: 1 1 auto;
+    min-width: 0;
+    width: 100%;
+  }
+}
