@@ -119,7 +119,7 @@ header p {
   /* 4 cards plus 20px padding on both sides: 880px + 40px = 920px */
   width: 858px;
   max-width: 100%;
-  margin: 150px auto 150px;
+  margin: 70px auto 50px;
 }
 
 /* Rectangular cards for each timeline item */
@@ -267,11 +267,19 @@ header p {
 
 /* Center the timeline helper text */
 .timeline-note {
-  background-color: #0071c5;
+  /* Make the note semi-transparent */
+  background-color: rgba(0, 113, 197, 0.7); /* blue with 70% opacity */
   color: #ffffff;
   text-align: center;
-  margin: 0;
-  padding: 5px 20px;
+  /* Limit horizontal width and center */
+  max-width: 600px; /* not fully expanded */
+  margin: 20px auto 70px;
+  padding: 16px;
+  /* Add a border and rounded corners */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  /* Optional: add a little box shadow */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* Stack the timeline vertically on small screens */
