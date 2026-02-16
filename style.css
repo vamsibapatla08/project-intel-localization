@@ -1,6 +1,6 @@
 /* Make the subscription form button semi-transparent */
 .newsletter-card .btn-primary {
-  background-color: rgba(0, 113, 197, 0.7) !important;
+  background-color: rgba(13, 147, 249, 0.9) !important;
   border-color: rgba(0, 113, 197, 0.7) !important;
   color: #fff !important;
 }
@@ -12,15 +12,35 @@
 }
 
 /* High contrast for 3-column section */
+
 .container .p-3.bg-white {
   background: #f3f3f3 !important;
-  /* Light gray for better contrast */
   color: #181818 !important;
 }
-
 .container .p-3.bg-white h2,
 .container .p-3.bg-white p {
   color: #181818 !important;
+}
+
+/* Consistent Learn More button styling */
+.learn-more-btn {
+  font-weight: 600;
+  border-radius: 0.5rem;
+  background-color: #0071c5 !important;
+  border: none;
+  color: #fff !important;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.learn-more-btn:hover,
+.learn-more-btn:focus {
+  background-color: #005fa3 !important;
+  color: #fff !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+}
+.learn-more-btn .bi {
+  font-size: 1.1em;
+  vertical-align: middle;
 }
 
 /* High contrast for subscription form */
@@ -374,19 +394,16 @@ header p {
 /* Center the timeline helper text */
 .timeline-note {
   /* Make the note semi-transparent */
-  background-color: rgba(0, 113, 197, 0.7);
-  /* blue with 70% opacity */
-  color: #ffffff;
+  background-color: #238bda;
+  color: #fff;
+  font-size: 1.15rem;
+  /* Keep all other attributes unchanged */
   text-align: center;
-  /* Limit horizontal width and center */
   max-width: 600px;
-  /* not fully expanded */
   margin: 20px auto 70px;
   padding: 16px;
-  /* Add a border and rounded corners */
   border: 1px solid #ccc;
   border-radius: 8px;
-  /* Optional: add a little box shadow */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
