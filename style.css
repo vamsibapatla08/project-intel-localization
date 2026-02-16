@@ -1,3 +1,9 @@
+
+/* Footer text: larger and bolder */
+footer {
+  font-size: 1.12rem;
+  font-weight: 500;
+}
 /* Ensure carousel navigation icons are always visible */
 
 /* Carousel navigation icons: black with smooth transition, no background */
@@ -44,19 +50,43 @@
   padding-bottom: 2.5rem !important;
   font-size: 1.18rem;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .card-carousel-item {
-    flex-direction: column !important;
     min-width: 0;
     max-width: 100%;
     padding: 1.5rem 0.5rem !important;
+  }
+}
+@media (max-width: 700px) {
+  .card-carousel-item {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 1.2rem 0.2rem !important;
   }
   .card-carousel-item .ps-3 {
     padding-left: 0 !important;
   }
   .card-carousel-item h2 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem !important;
   }
+  .card-carousel-item p {
+    font-size: 1rem !important;
+    min-height: unset !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-carousel-item {
+    padding: 0.7rem 0.1rem !important;
+  }
+  .card-carousel-item h2 {
+    font-size: 1rem;
+  }
+}
+
+footer {
+  word-break: break-word;
 }
 /* Make the subscription form button semi-transparent */
 .newsletter-card .btn-primary {
