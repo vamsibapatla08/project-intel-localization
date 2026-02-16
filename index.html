@@ -155,63 +155,88 @@
     <p class="timeline-note mb-5 bg-blue">Scroll to view timeline | Hover over cards to learn more!</p>
 
     <!-- 3- Column Content Section  -->
+    <!-- Carousel Card Section -->
     <section class="container my-5 pt-4 pb-4">
-      <div class="row g-4">
+      <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
-        <!-- Column 1 -->
-        <div class="col-12 col-md-4">
-          <div class="p-3 h-100 bg-white rounded shadow-sm">
-              <h2><i class="bi bi-bar-chart-line me-2"></i>RISE Strategy</h2>
-            <div style="height: 12px;"></div> <!-- Extra space between h2 and p -->
-            <p>
-              Under its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy, Intel sets ambitious 2030 goals,
-              including driving industry-wide progress on climate action, water stewardship, and waste reduction.
-            </p>
-              <div class="d-flex align-items-end h-100">
-                <a class="btn btn-primary learn-more-btn w-100 mt-2" href="#">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div
+              class="d-flex flex-row align-items-stretch justify-content-center card-carousel-item bg-white rounded shadow-sm p-4"
+              style="min-height:220px;">
+              <div class="d-flex flex-column justify-content-between align-items-start me-4" style="min-width:220px;">
+                <h2 class="mb-4"><i class="bi bi-bar-chart-line me-2"></i>RISE Strategy</h2>
+                <a class="btn btn-primary learn-more-btn mt-auto" href="#">
                   <span>Learn More</span> <i class="bi bi-arrow-right ms-2"></i>
                 </a>
               </div>
+              <div class="flex-grow-1 d-flex align-items-center">
+                <p class="mb-0 ps-3 w-100 d-flex align-items-center" style="font-size:1.15rem; min-height:120px;">
+                  Under its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy, Intel sets ambitious 2030
+                  goals, including driving industry-wide progress on climate action, water stewardship, and waste
+                  reduction.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <!-- Column 2 -->
-        <div class="col-12 col-md-4">
-          <div class="p-3 h-100 bg-white rounded shadow-sm">
-              <h2><i class="bi bi-check2-circle me-2"></i>Commitment</h2>
-            <div style="height: 12px;"></div>
-            <p>
-              In 2022, Intel pledged to achieve net-zero greenhouse gas emissions (Scope 1 and 2) by 2040. This
-              commitment
-              builds on decades of environmental initiatives and partnerships across the semiconductor industry.
-            </p>
-              <div class="d-flex align-items-end h-100">
-                <a class="btn btn-primary learn-more-btn w-100 mt-2" href="#">
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div
+              class="d-flex flex-row align-items-stretch justify-content-center card-carousel-item bg-white rounded shadow-sm p-4"
+              style="min-height:220px;">
+              <div class="d-flex flex-column justify-content-between align-items-start me-4" style="min-width:220px;">
+                <h2 class="mb-4"><i class="bi bi-check2-circle me-2"></i>Commitment</h2>
+                <a class="btn btn-primary learn-more-btn mt-auto" href="#">
                   <span>Learn More</span> <i class="bi bi-arrow-right ms-2"></i>
                 </a>
               </div>
+              <div class="flex-grow-1 d-flex align-items-center">
+                <p class="mb-0 ps-3 w-100 d-flex align-items-center" style="font-size:1.15rem; min-height:120px;">
+                  In 2022, Intel pledged to achieve net-zero greenhouse gas emissions (Scope 1 and 2) by 2040. This
+                  commitment builds on decades of environmental initiatives and partnerships across the semiconductor
+                  industry.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <!-- Column 3 -->
-        <div class="col-12 col-md-4">
-          <div class="p-3 h-100 bg-white rounded shadow-sm">
-              <h2><i class="bi bi-droplet-half me-2"></i>Water &amp; Waste</h2>
-            <div style="height: 12px;"></div>
-            <p>
-              Intel conserves billions of gallons of water annually and collaborates with local communities to restore
-              watersheds. Intel also upcycles and recycles materials to reduce waste and advance a circular economy.
-            </p>
-              <div class="d-flex align-items-end h-100">
-                <a class="btn btn-primary learn-more-btn w-100 mt-2" href="#">
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div
+              class="d-flex flex-row align-items-stretch justify-content-center card-carousel-item bg-white rounded shadow-sm p-4"
+              style="min-height:220px;">
+              <div class="d-flex flex-column justify-content-between align-items-start me-4" style="min-width:220px;">
+                <h2 class="mb-4"><i class="bi bi-droplet-half me-2"></i>Water &amp; Waste</h2>
+                <a class="btn btn-primary learn-more-btn mt-auto" href="#">
                   <span>Learn More</span> <i class="bi bi-arrow-right ms-2"></i>
                 </a>
               </div>
+              <div class="flex-grow-1 d-flex align-items-center">
+                <p class="mb-0 ps-3 w-100 d-flex align-items-center" style="font-size:1.15rem; min-height:120px;">
+                  Intel conserves billions of gallons of water annually and collaborates with local communities to
+                  restore watersheds. Intel also upcycles and recycles materials to reduce waste and advance a circular
+                  economy.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
 
       </div>
     </section>
+
 
     <!-- Subscription form-->
     <section class="container my-5 pt-4 pb-4">
@@ -254,6 +279,9 @@
     </div>
   </footer>
 
+
+  <!-- Bootstrap JS Bundle (for carousel functionality) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 <script>

@@ -1,3 +1,63 @@
+/* Ensure carousel navigation icons are always visible */
+
+/* Carousel navigation icons: black with smooth transition, no background */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none !important;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.2s, background 0.2s;
+}
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  content: '';
+}
+.carousel-control-prev-icon {
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>') center/contain no-repeat;
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>') center/contain no-repeat;
+  background-color: #111;
+}
+.carousel-control-next-icon {
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>') center/contain no-repeat;
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>') center/contain no-repeat;
+  background-color: #111;
+}
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  filter: brightness(0.6);
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 4rem;
+}
+/* Carousel card custom style for larger card look */
+/* Larger carousel card size */
+.card-carousel-item {
+  min-width: 520px;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+  font-size: 1.18rem;
+}
+@media (max-width: 700px) {
+  .card-carousel-item {
+    flex-direction: column !important;
+    min-width: 0;
+    max-width: 100%;
+    padding: 1.5rem 0.5rem !important;
+  }
+  .card-carousel-item .ps-3 {
+    padding-left: 0 !important;
+  }
+  .card-carousel-item h2 {
+    font-size: 1.25rem;
+  }
+}
 /* Make the subscription form button semi-transparent */
 .newsletter-card .btn-primary {
   background-color: rgba(13, 147, 249, 0.9) !important;
