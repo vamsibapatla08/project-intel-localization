@@ -117,31 +117,31 @@ footer {
 /* High contrast for 3-column section */
 
 .container .p-3.bg-white {
-  background: #f3f3f3 !important;
-  color: #181818 !important;
+  background: #fff !important; /* Bootstrap white */
+  color: #212529 !important; /* Bootstrap text-dark */
 }
 
 .container .p-3.bg-white h2,
 .container .p-3.bg-white p {
-  color: #181818 !important;
+  color: #212529 !important;
 }
 
 /* Consistent Learn More button styling */
 .learn-more-btn {
   font-weight: 600;
   border-radius: 0.5rem;
-  background-color: #0071c5 !important;
+  background-color: #0d6efd !important; /* Bootstrap primary */
   border: none;
   color: #fff !important;
   transition: background 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .learn-more-btn:hover,
 .learn-more-btn:focus {
-  background-color: #005fa3 !important;
+  background-color: #084298 !important; /* Bootstrap primary darken */
   color: #fff !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.13);
 }
 
 .learn-more-btn .bi {
@@ -151,14 +151,14 @@ footer {
 
 /* High contrast for subscription form */
 .newsletter-card {
-  background: #f3f3f3 !important;
-  color: #181818 !important;
+  background: #fff !important; /* Bootstrap white */
+  color: #212529 !important; /* Bootstrap text-dark */
 }
 
 .newsletter-card h2,
 .newsletter-card input,
 .newsletter-card button {
-  color: #181818 !important;
+  color: #212529 !important;
 }
 
 .newsletter-card input::placeholder {
@@ -168,16 +168,16 @@ footer {
 
 /* High contrast for footer */
 footer {
-  background: #e9ecef !important;
-  color: #181818 !important;
+  background: #212529 !important; /* Bootstrap dark */
+  color: #fff !important;
 }
 
 footer .nav-link {
-  color: #181818 !important;
+  color: #f8f9fa !important; /* Bootstrap light */
 }
 
 footer .nav-link:hover {
-  color: #0071c5 !important;
+  color: #0d6efd !important; /* Bootstrap primary */
   text-decoration: underline;
 }
 
@@ -499,18 +499,16 @@ header p {
 
 /* Center the timeline helper text */
 .timeline-note {
-  /* Make the note semi-transparent */
-  background-color: #238bda;
+  background-color: #0a2342; /* Much darker blue for high contrast */
   color: #fff;
   font-size: 1.15rem;
-  /* Keep all other attributes unchanged */
   text-align: center;
   max-width: 600px;
   margin: 20px auto 70px;
   padding: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #084298; /* darker border for accessibility */
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.13);
 }
 
 /* Stack the timeline vertically on small screens */
