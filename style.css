@@ -1,9 +1,9 @@
-
 /* Footer text: larger and bolder */
 footer {
   font-size: 1.12rem;
   font-weight: 500;
 }
+
 /* Ensure carousel navigation icons are always visible */
 
 /* Carousel navigation icons: black with smooth transition, no background */
@@ -17,39 +17,46 @@ footer {
   justify-content: center;
   transition: filter 0.2s, background 0.2s;
 }
+
 .carousel-control-prev-icon::after,
 .carousel-control-next-icon::after {
   content: '';
 }
+
 .carousel-control-prev-icon {
   mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>') center/contain no-repeat;
   -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>') center/contain no-repeat;
   background-color: #111;
 }
+
 .carousel-control-next-icon {
   mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>') center/contain no-repeat;
   -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>') center/contain no-repeat;
   background-color: #111;
 }
+
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
   filter: brightness(0.6);
 }
+
 .carousel-control-prev,
 .carousel-control-next {
   width: 4rem;
 }
+
 /* Carousel card custom style for larger card look */
 /* Larger carousel card size */
 .card-carousel-item {
   min-width: 520px;
   max-width: 1100px;
   margin: 0 auto;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   padding-top: 2.5rem !important;
   padding-bottom: 2.5rem !important;
   font-size: 1.18rem;
 }
+
 @media (max-width: 900px) {
   .card-carousel-item {
     min-width: 0;
@@ -57,19 +64,23 @@ footer {
     padding: 1.5rem 0.5rem !important;
   }
 }
+
 @media (max-width: 700px) {
   .card-carousel-item {
     flex-direction: column !important;
     align-items: stretch !important;
     padding: 1.2rem 0.2rem !important;
   }
+
   .card-carousel-item .ps-3 {
     padding-left: 0 !important;
   }
+
   .card-carousel-item h2 {
     font-size: 1.1rem;
     margin-bottom: 1rem !important;
   }
+
   .card-carousel-item p {
     font-size: 1rem !important;
     min-height: unset !important;
@@ -80,6 +91,7 @@ footer {
   .card-carousel-item {
     padding: 0.7rem 0.1rem !important;
   }
+
   .card-carousel-item h2 {
     font-size: 1rem;
   }
@@ -88,6 +100,7 @@ footer {
 footer {
   word-break: break-word;
 }
+
 /* Make the subscription form button semi-transparent */
 .newsletter-card .btn-primary {
   background-color: rgba(13, 147, 249, 0.9) !important;
@@ -107,6 +120,7 @@ footer {
   background: #f3f3f3 !important;
   color: #181818 !important;
 }
+
 .container .p-3.bg-white h2,
 .container .p-3.bg-white p {
   color: #181818 !important;
@@ -120,14 +134,16 @@ footer {
   border: none;
   color: #fff !important;
   transition: background 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
+
 .learn-more-btn:hover,
 .learn-more-btn:focus {
   background-color: #005fa3 !important;
   color: #fff !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
 }
+
 .learn-more-btn .bi {
   font-size: 1.1em;
   vertical-align: middle;
@@ -513,5 +529,40 @@ header p {
     flex: 1 1 auto;
     min-width: 0;
     width: 100%;
+  }
+}
+
+/* Center carousel card content for small screens */
+@media (max-width: 600px) {
+  .card-carousel-item {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .card-carousel-item h2 {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .card-carousel-item .learn-more-btn {
+    font-size: 0.95em;
+    padding: 6px 16px;
+    margin: 10px auto 24px auto;
+    display: inline-block;
+  }
+
+  .card-carousel-item p {
+    text-align: center !important;
+    justify-content: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .card-carousel-item .d-flex.flex-column {
+    align-items: center !important;
   }
 }
