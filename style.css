@@ -185,10 +185,7 @@ footer {
   color: #fff !important;
 }
 
-footer .nav-link {
-  color: #f8f9fa !important;
-  /* Bootstrap light */
-}
+/* Removed custom color for footer .nav-link to allow Bootstrap's text-primary to show */
 
 footer .nav-link:hover {
   color: #0d6efd !important;
