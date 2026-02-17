@@ -1,3 +1,9 @@
+/* Use Figtree font for p text in 3-column content section */
+.card-carousel-item p {
+  font-family: 'Figtree', sans-serif !important;
+  text-align: center !important;
+  justify-content: center !important;
+}
 /* For medium screens: position carousel navigation buttons at top-left and top-right */
 @media (max-width: 991.98px) and (min-width: 601px) {
   #cardCarousel {
