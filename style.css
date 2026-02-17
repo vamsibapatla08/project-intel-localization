@@ -1,44 +1,39 @@
+/* Add vertical padding to 3-column cards on small screens */
+@media (max-width: 767.98px) {
+  .row.g-4 .card {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .row.g-4 .col-12:last-child .card {
+    margin-bottom: 0 !important;
+  }
+}
 /* Use Figtree font for p text in 3-column content section */
-.card-carousel-item p {
+.three-col-cards .card-carousel-item p {
   font-family: 'Figtree', sans-serif !important;
   text-align: center !important;
   justify-content: center !important;
 }
 
-/* For medium screens: position carousel navigation buttons at top-left and top-right */
-@media (max-width: 991.98px) and (min-width: 601px) {
-  #cardCarousel {
-    position: relative;
-  }
 
-  #cardCarousel .carousel-control-prev,
-  #cardCarousel .carousel-control-next {
-    position: absolute;
-    top: 8px;
-    width: 36px;
-    height: 36px;
-    z-index: 2;
-    padding: 0;
-    background: none;
-    box-shadow: none;
-  }
+/* 3-column section responsive layout */
+.three-col-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
 
-  #cardCarousel .carousel-control-prev {
-    right: 8px;
-    left: auto;
-  }
-
-  #cardCarousel .carousel-control-next {
-    left: 8px;
-    right: auto;
-  }
-
-  #cardCarousel .carousel-control-prev-icon,
-  #cardCarousel .carousel-control-next-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    min-width: 0;
-    min-height: 0;
+@media (max-width: 991.98px) {
+  .three-col-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+    max-height: 80vh;
+    overflow-y: auto;
+    align-items: center;
   }
 }
 
@@ -54,46 +49,7 @@ footer {
   font-weight: 500;
 }
 
-/* Ensure carousel navigation icons are always visible */
 
-/* Carousel navigation icons: black with smooth transition, no background */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-image: none !important;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: filter 0.2s, background 0.2s;
-}
-
-.carousel-control-prev-icon::after,
-.carousel-control-next-icon::after {
-  content: '';
-}
-
-.carousel-control-prev-icon {
-  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>') center/contain no-repeat;
-  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>') center/contain no-repeat;
-  background-color: #111;
-}
-
-.carousel-control-next-icon {
-  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>') center/contain no-repeat;
-  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>') center/contain no-repeat;
-  background-color: #111;
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-  filter: brightness(0.6);
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 4rem;
-}
 
 /* Carousel card custom style for larger card look */
 /* Larger carousel card size */
