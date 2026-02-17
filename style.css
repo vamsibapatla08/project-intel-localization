@@ -1,14 +1,3 @@
-/* Add vertical padding to 3-column cards on small screens */
-@media (max-width: 767.98px) {
-  .row.g-4 .card {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-    margin-bottom: 1.5rem !important;
-  }
-  .row.g-4 .col-12:last-child .card {
-    margin-bottom: 0 !important;
-  }
-}
 /* Use Figtree font for p text in 3-column content section */
 .three-col-cards .card-carousel-item p {
   font-family: 'Figtree', sans-serif !important;
