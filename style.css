@@ -1,3 +1,8 @@
+@media (min-width: 992px) {
+  .card-carousel-item p {
+    margin-left: 32px;
+  }
+}
 /* Footer text: larger and bolder */
 footer {
   font-size: 1.12rem;
@@ -117,8 +122,10 @@ footer {
 /* High contrast for 3-column section */
 
 .container .p-3.bg-white {
-  background: #fff !important; /* Bootstrap white */
-  color: #212529 !important; /* Bootstrap text-dark */
+  background: #fff !important;
+  /* Bootstrap white */
+  color: #212529 !important;
+  /* Bootstrap text-dark */
 }
 
 .container .p-3.bg-white h2,
@@ -130,18 +137,20 @@ footer {
 .learn-more-btn {
   font-weight: 600;
   border-radius: 0.5rem;
-  background-color: #0d6efd !important; /* Bootstrap primary */
+  background-color: #0d6efd !important;
+  /* Bootstrap primary */
   border: none;
   color: #fff !important;
   transition: background 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .learn-more-btn:hover,
 .learn-more-btn:focus {
-  background-color: #084298 !important; /* Bootstrap primary darken */
+  background-color: #084298 !important;
+  /* Bootstrap primary darken */
   color: #fff !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.13);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.13);
 }
 
 .learn-more-btn .bi {
@@ -151,8 +160,10 @@ footer {
 
 /* High contrast for subscription form */
 .newsletter-card {
-  background: #fff !important; /* Bootstrap white */
-  color: #212529 !important; /* Bootstrap text-dark */
+  background: #fff !important;
+  /* Bootstrap white */
+  color: #212529 !important;
+  /* Bootstrap text-dark */
 }
 
 .newsletter-card h2,
@@ -168,16 +179,19 @@ footer {
 
 /* High contrast for footer */
 footer {
-  background: #212529 !important; /* Bootstrap dark */
+  background: #212529 !important;
+  /* Bootstrap dark */
   color: #fff !important;
 }
 
 footer .nav-link {
-  color: #f8f9fa !important; /* Bootstrap light */
+  color: #f8f9fa !important;
+  /* Bootstrap light */
 }
 
 footer .nav-link:hover {
-  color: #0d6efd !important; /* Bootstrap primary */
+  color: #0d6efd !important;
+  /* Bootstrap primary */
   text-decoration: underline;
 }
 
@@ -499,14 +513,16 @@ header p {
 
 /* Center the timeline helper text */
 .timeline-note {
-  background-color: #0a2342; /* Much darker blue for high contrast */
+  background-color: #0a2342;
+  /* Much darker blue for high contrast */
   color: #fff;
   font-size: 1.15rem;
   text-align: center;
   max-width: 600px;
   margin: 20px auto 70px;
   padding: 16px;
-  border: 1px solid #084298; /* darker border for accessibility */
+  border: 1px solid #084298;
+  /* darker border for accessibility */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.13);
 }
@@ -569,6 +585,7 @@ header p {
   #cardCarousel {
     position: relative;
   }
+
   #cardCarousel .carousel-control-prev,
   #cardCarousel .carousel-control-next {
     position: absolute;
@@ -580,14 +597,17 @@ header p {
     background: none;
     box-shadow: none;
   }
+
   #cardCarousel .carousel-control-prev {
     right: 8px;
     left: auto;
   }
+
   #cardCarousel .carousel-control-next {
     left: 8px;
     right: auto;
   }
+
   #cardCarousel .carousel-control-prev-icon,
   #cardCarousel .carousel-control-next-icon {
     width: 1.5rem;
